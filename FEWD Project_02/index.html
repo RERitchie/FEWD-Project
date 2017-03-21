@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arduino Microcontrollers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="img/"
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">The Arduino Family of Microcontrollers</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Devices</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="#">Code examples</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div><!-- #header-container -->
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <section>
+                      <img src="img/UNO rev3.jpg" style="float:left;width:150px;height:114px;">
+                        <h2>Uno</h2>
+                        <p>UNO is the best board to get started with electronics and coding. If this is your first experience tinkering with the platform, the UNO is the most robust board to experiment with. The UNO is the most used and documented board in the Arduino family</p>
+                    </section>
+                    <section>
+                      <img src="img/101.jpg" style="float:left;width:150px;height:114px;">
+                        <h2>101</h2>
+                        <p>Arduino 101 combines the ease-of-use of the classic boards with the latest technologies. The board recognises gestures, and features a six-axis accelerometer and gyroscope. Control your projects with your phone over Bluetooth connectivity!</p>
+                    </section>
+                    <section>
+                      <img src="img/Micro.jpg" style="float:left;width:150px;height:114px;">
+                        <h2>Micro</h2>
+                        <p>Micro is the smallest board of the family, easy to integrate it in everyday objects to make them interactive. The Micro is based on the ATmega32U4 microcontroller featuring a built-in USB which makes the Micro recognisable as a mouse or keyboard.</p>
+                    </section>
+                    <section>
+                      <img src="img/Mega.jpg" style="float:left;width:150px;height:114px;">
+                        <h2>Mega</h2>
+                        <p>Arduino Mega is a powerful board similar to the UNO</p>
+                    </section>
+                </article>
+
+                <aside>
+                  <section>
+                    <h2>Code Example</h2>
+                      <p>An unassigned LED on the board can be made to flash on power up or reset with the following code:</p>
+
+                      <p><i>First initialize LED_BUILTIN pin as an output pin with the line:</i></p>
+
+                      <p>pinMode(LED_BUILTIN, OUTPUT);</p>
+
+                      <p><i>In the main loop, you turn the LED on with the line:</i></p>
+
+                      <p>digitalWrite(LED_BUILTIN, HIGH);</p>
+
+                      <p>delay(1000);</p>
+
+                      <p><i>This supplies 5 volts to the LED, lighting it up. Delay 1000ms will keep the LED lit for 1 second.</i></p>
+
+                      <p>digitalWrite(LED_BUILTIN, LOW);</p>
+
+                      <p><i>This instruction sets the LED_BUILTIN pin back to 0 volts, and turns the LED off.</i></p>
+                  </section>
+                </aside>
+
+            </div> <!-- #main wrapper clearfix -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>&copy; 2017, R. E. Ritchie</h3>
+            </footer>
+        </div>
+
+    </body>
+</html>
