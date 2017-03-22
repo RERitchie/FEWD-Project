@@ -1,0 +1,208 @@
+/*************************
+Base Styles
+*************************/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+  margin: 15px 15px 40px 15px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Tahoma, Helvetica Neue, Arial;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h1 {
+  line-height: 120%;
+}
+
+img align-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+image.small: {
+    width:150px;
+    height:114px;
+}
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.header-container header {
+  margin-left: 15px;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #0099cc;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+
+}
+
+.title {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px #66879E;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+nav a {
+  display: block;
+  margin-bottom: 2px;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #0099cc;
+}
+
+nav a:hover,
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 30px 0;
+}
+
+.main article h2 {
+  font-size: 2em;
+
+}
+
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+  color: white;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #66879E;
+  padding: 6px 0;
+  margin-left: 10px;
+}
+
+/*************************
+Code Storage
+*************************/
+
+/*** style="float:left;width:150px;height:114px;"
+     style="float:left;width:150px;height:114px;"
+     style="float:left;width:150px;height:114px;"
+     style="float:left;width:150px;height:114px;"
+
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 480px) {
+
+  nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 25px 1%;
+  }
+
+}
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/**************************
+End
+**************************/
